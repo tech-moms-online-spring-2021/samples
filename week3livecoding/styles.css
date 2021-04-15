@@ -1,0 +1,30 @@
+h1 {
+  color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+/* Table Styles */
+table {
+  border-collapse: collapse;
+}
+
+thead,
+tfoot {
+  background-color: #c1cde6;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  padding: 4px
+}
+
+tbody th {
+  color: #0a5f1c;
+}

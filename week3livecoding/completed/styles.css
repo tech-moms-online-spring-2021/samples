@@ -1,0 +1,102 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px;
+  min-width: 500px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+h1,
+h2 {
+  color: darkslategray;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+
+/* Description Section Styles */
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  padding: 0px 10px 10px
+}
+
+
+
+/* People Section Styles */
+.people {
+  display: grid;
+  grid-template-areas:
+    'heading heading'
+    'students instructors';
+  justify-content: space-around;
+  background-color: lightpink;
+}
+
+img {
+  border-radius: 50%;
+  width: 225px;
+  height: 225px;
+  object-fit: cover;
+  object-position: 25%;
+}
+
+.peopleHeading {
+  grid-area: heading;
+}
+
+.students {
+  grid-area: students;
+}
+
+.instructors {
+  grid-area: instructors;
+}
+
+@media only screen and (max-width: 650px) {
+  .people {
+    grid-template-areas:
+      'heading'
+      'students'
+      'instructors';
+  }
+
+  .students,
+  .instructors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Table Styles */
+table {
+  border-collapse: collapse;
+}
+
+thead,
+tfoot {
+  background-color: #c1cde6;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  padding: 4px
+}
+
+tbody th {
+  color: #0a5f1c;
+}
